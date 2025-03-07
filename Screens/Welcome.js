@@ -1,26 +1,28 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, Button} from 'react-native';
+import {View, Text, StyleSheet, Image, Button,Pressable} from 'react-native';
 import Colors from '../constants/Colors';
 // import Button from '../components/Button'; <Button title="SignUp"onPress={()=>navigation.navigate("SignUp")}/>
-const Welcome = () => {
+const Welcome = ({navigation}) => {
     return(
-    <View style={[styles.container]}>
-        
-        
+   
+   <View style={[styles.container]}>    
            <View style= {{alignItems: "center", justifyContent: "center"}}>
-           <Text style={{fontSize:30, color: Colors.secondary,}}>Welcome to Cafe Chills!</Text>
+           <View style={[styles.box]}>
+           <Text style={{fontSize:30, color: Colors.secondary,transform:[{translateX: '0%'},{translateY:'100%'}],}}>Welcome to Cafe Chills!</Text>
+            </View>
            <Image 
            source={require('../assets/Logo.png')}
            style={{width: '60%', height: '60%',}}/>
            </View>
 
         <View style={{alignItems: "center", justifyContent: "center", }}>
-            
+                <Pressable onPress={()=>navigation.navigate("SignUp")}>
                 <Text style={{fontSize: 50, fontWeight: 600,}}>Sign in </Text>
-            
-            <View style={[styles.box]}>
-                <Text style={{fontSize: 25, }}>Sign Up</Text>
-            </View>
+                </Pressable>
+                <Pressable onPress={()=>navigation.navigate("Login")}>
+                <Text style={{fontSize: 25, fontWeight: 400,}}>Sign Up</Text>
+                </Pressable>
+           
        </View>
        <View style={[styles.boxtwo]}>
             <Button onPress={() => {console.log('Works');}} title="Questions? Ask Here!" color='#838a54'/>
@@ -36,9 +38,10 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.thirdary,},
     box:{
         flex: 1,
-        backgroundColor: Colors.dgreen,
+        backgroundColor: Colors.lblue,
         alignItems: 'center',
-        height: '70%',
+        alignContent: 'center',
+        height: '100%',
         width: '100%',
     },
     boxtwo:{
