@@ -5,7 +5,7 @@ import Colors from '../constants/Colors';
 const Welcome = ({navigation}) => {
     return(
    
-   <View style={[styles.container]}>    
+<View style={[styles.container]}>    
            <View style= {{alignItems: "center", justifyContent: "center"}}>
            <View style={[styles.box]}>
            <Text style={{fontSize:30, color: Colors.secondary,transform:[{translateX: '0%'},{translateY:'100%'}],}}>Welcome to Cafe Chills!</Text>
@@ -16,13 +16,22 @@ const Welcome = ({navigation}) => {
            </View>
 
         <View style={{alignItems: "center", justifyContent: "center", }}>
-                <Pressable onPress={()=>navigation.navigate("SignUp")}>
-                <Text style={{fontSize: 50, fontWeight: 600,}}>Sign in </Text>
-                </Pressable>
-                <Pressable onPress={()=>navigation.navigate("Login")}>
-                <Text style={{fontSize: 25, fontWeight: 400,}}>Sign Up</Text>
-                </Pressable>
-           
+                <View style={{backgroundColor: Colors.fgreen, Width:'100%', Height:'100%'}}>
+                    <Pressable onPress={()=>navigation.navigate("Login")}>
+                    <Text style={{fontSize: 50, fontWeight: 600,}}>Login </Text>
+                    </Pressable>
+                </View>
+                <View style={{backgroundColor: Colors.white}}>
+                    <Pressable onPress={()=>navigation.navigate("SignUp")}>
+                    <Text style={{fontSize: 25, fontWeight: 400,}}>Sign Up</Text>
+                    </Pressable>
+                </View>
+                <View styles={{}}>
+                    <Pressable onPress={() => navigation.navigate("GuestMenu")}>
+                        <Text>Access without an account!</Text>
+                    </Pressable>
+                    
+                </View>
        </View>
        <View style={[styles.boxtwo]}>
             <Button onPress={() => {console.log('Works');}} title="Questions? Ask Here!" color='#838a54'/>
