@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 const GuestMenu = () => {
     return(
         <View>
-            <Text>HomeMenu</Text>
+            <Text>Without an account</Text>
         </View>
     )
 }
