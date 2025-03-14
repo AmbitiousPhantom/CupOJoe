@@ -9,4 +9,4 @@ March 7 2025 - Added a Login Screen
 
 March 11 2025 - Caught error on App and added more to the Login page
 
-March 13 2025 - Added a Android and IOS folder with a placeholder name in each, also components in order to design and 
+March 13 2025 - Added a Android and IOS folder with a placeholder name in each, also components in order to design and modify certain functions to my specified parameters
