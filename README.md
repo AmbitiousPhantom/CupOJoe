@@ -1,4 +1,4 @@
-# CafeChills
+# CupOJoe
 Just an app I decided to create for fun as well to learn more about React Native while also using Expo. The purpose of this app is to serve as a Cafe app clone where the user can order their coffee with the specified ingredients, see the coffee of the week, add pictures 
 
 Feb 24 2025- Added currently in progress file, will add name template
