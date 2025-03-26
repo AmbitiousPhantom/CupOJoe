@@ -14,3 +14,10 @@ March 13 2025 -
 - Added components in order to design and modify certain functions to my specified parameters
 - Added a Pressable that leads to the menu without an account from the Welcome screen
 - Added more to Login and SignUp Screen
+
+March 18 2025 -
+- Added more to the Guest Menu where anyone can view the menu, added 3 boxes and plan to add a scrolling option later
+- Added a box component which serves as the check box which remembers a user's details for easier login
+
+March 26 2025 -
+- Added more to the Login screen with Continue reacting when touched and leading to Home Menu soon
